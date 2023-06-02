@@ -3,8 +3,8 @@ import Input from "../Components/Input";
 import Button from "../Components/Button";
 import lotus from "../assets/petals.svg";
 const LoginPage = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState<string>("");
+  const [password, setPassword] = useState<string>("");
 
   const handleEmailChange = (e: ChangeEvent<HTMLInputElement>) => {
     setEmail(e.target.value);
